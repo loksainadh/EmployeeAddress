@@ -35,7 +35,7 @@ public class EmployeeService {
         Response response = new Response();
         if (employeeRequest != null) {
             Employee employee = constrctEmployee(employeeRequest);
-            log.info("emp " + employee);
+            log.info("employee " + employee);
             employeeRepo.save(employee);
             response.setStatus(true);
             response.setErrorMessage(MessageConstants.EMPLOYEE_ADDED);

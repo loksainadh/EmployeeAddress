@@ -42,4 +42,10 @@ public class EmployeeController {
         return employeeService.addAddress(employeeId,addressRequest);
     }
 
+    @GetMapping("/wish")
+    public String wishMessage(){
+        return "Good Evening";
+
+    }
+
 }
